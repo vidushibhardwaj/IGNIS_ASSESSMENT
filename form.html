@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CREATE EVENT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2><center>CREATE AN EVENT</center></h2>
+        <br><br>
+    <form>
+    <div class="form-group">
+      <label for="e_name">EVENT NAME</label>
+      <input type="text" class="form-control" id="e_name" placeholder="enter event name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="e_desc">DESCRIPTION</label>
+      <input type="text" class="form-control" id="e_desc" placeholder="enter decription">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="e_datetime">DATE-TIME</label>
+      <input type="datetime-local" class="form-control" id="e_datetime" placeholder="enter event date-time">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="e_loc">LOCATION</label>
+      <input type="text" class="form-control" id="e_loc" placeholder="enter event location">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="e_img">IMAGE</label>
+      <input type="text" class="form-control" id="e_img" placeholder="select image">
+    </div>
+    <br>
+      <div class="form-group">
+      <label for="price">PRICE</label>
+      <input type="number" class="form-control" id="price" placeholder="enter price">
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+      <input type="radio" id="e_liked" value="liked" name="ifliked">
+      <label for="liked">Liked</label>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  </div>
+  </body>
+  <script type="text/javascript" src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</html>
+</html>
